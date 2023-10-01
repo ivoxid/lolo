@@ -1,0 +1,178 @@
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.fadeInAnimated, body {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+}
+
+#second {
+  animation-delay: 2s;
+}
+
+#third {
+  animation-delay: 4s;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+html{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.gif'); 
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    z-index: -1;
+    cursor: url('cursor.png'), auto;
+}
+
+html, body {
+    margin: 0;
+    height: cover;
+}
+
+html{
+  font-size: 16px;
+  line-height: 1.625;
+  color: rgb(193,193,193);
+  font-family:Roboto Condensed, sans-serif;
+}
+
+html { 
+document.onkeydown = function (e) {
+     var e = e || event;
+
+     if (e.shiftKey === true) {
+          return false;
+     }
+};
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.circle {
+      background-color: #141417;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+ }
+
+
+.neonText {
+  color: #ffffff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #fff,
+      0 0 82px #fff,
+      0 0 92px #fff,
+      0 0 102px #fff,
+      0 0 151px #fff;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+
+.round {
+	border-radius: 50%;
+	padding: 7px;
+        width: 90px;
+        height: 90px;
+}
+
+.card-container {
+	background-color: #141417;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	padding-top: 30px;
+        padding-bottom: 30px;
+	position: absolute;
+	width: 800px;
+	max-width: 100%;
+	text-align: center;
+        font-size: 11px;
+
+}
+
+.otherfriends {
+  position: absolute;
+  top: 69%;
+  left: 43%;
+}
+
+.byme {
+  position: center;
+  top: 40%;
+}
+
+button.primary {
+	background-color: #141417;
+        border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	padding-top: 5px;
+	adding-bottom: 5px;
+	position: absolute;
+	width: 800px;
+	text-align: center;
+        font-size: 11px;
+	color: white;
+	font-family: Roboto Condensed, sans-serif;
+	font-weight: 500;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;   
+}
+
+
+.line-1{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;  
+}
+
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s infinite normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

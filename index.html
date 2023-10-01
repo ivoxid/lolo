@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<p style="font-size: 20px;z-index: -1;" class="center neonText">click 2 view</p>
+
+
+    <style>
+
+            html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+            a { display: block; width: 100%; height: 100%; }
+
+
+      .center {
+        position: absolute;
+        top: 50%;
+left: 46%;
+        text-align: center;
+      }
+    </style>
+
+
+<head>
+
+
+<style>
+
+body {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.gif');
+      background-size: cover;
+      height: 100vh;
+      padding:0;
+      margin:0;
+      z-index: -1;
+      cursor: url('cursor.png'), auto;}
+
+* {
+    cursor:url("cursor.png"),default;
+}
+
+
+
+html{
+  font-size: 16px;
+  line-height: 1.625;
+  color: rgb(193,193,193);
+  font-family:Roboto Condensed, sans-serif;
+}
+
+
+.neonText {
+  color: #ffffff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #fff,
+      0 0 82px #fff,
+      0 0 92px #fff,
+      0 0 102px #fff,
+      0 0 151px #fff;
+}
+</style>
+
+
+
+
+ <script type="text/javascript">
+        messages = [ "l", "lo", "loa", "loat", "loath", "loathe", "loath", "loat", "loa", "lo", ]
+
+        function rotateTitle() {
+            index = 0
+
+            setInterval(function() {
+                if (messages.length == index) {
+                    index = 0
+                }
+
+                document.title = messages[index]
+
+                index++
+            }, 300)
+        }
+    </script>
+
+
+
+<title>+</title>
+</head> 
+<body onLoad="rotateTitle()">
+<a href="https://loathe.lol/home"></a>
+
+
+
+</body>
+</html>
+
+
+
+
+
