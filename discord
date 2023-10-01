@@ -210,8 +210,6 @@ function createDiv(height, width) {
 
 
     <h1><h2 class="neonText fadeInAnimated" style="color:#ffffff;text-align:center;">loathe.lol</h2>ㅤ</h1>
-
-<h2 class="neonText fadeInAnimated" style="color:#ffffff;text-align:center;">loathe.lol</h2>
 <body>
 
 
@@ -303,10 +301,6 @@ button:hover {
 }
 </style>
 
-
-<p style="text-align:center;font-size: 11px" class="byme line-1 anim-typewriter"> loathe.lol made by loathie on discord.com<br></p>
-
-<iframe src="https://discord.com/widget?id=865047794393415711&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 </body>
 </html>
